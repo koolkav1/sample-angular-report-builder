@@ -1,0 +1,27 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.flex-v {
+    display: flex;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.4);
+  }
+  
+  .container-v {
+    flex: 1;
+  }
+  .container-v:not(:last-child) {
+    margin-right: 8px;
+  }
+  
+  .vamp-v {
+    background: rgba(255, 255, 255, 0.4);
+    list-style: none;
+    padding: 8px;
+    color: #222;
+  }
+  
+  .vamp-v:not(:last-child) {
+    border-bottom: 1px solid #777;
+  }
+  table {
+    width: 100%;
+  }

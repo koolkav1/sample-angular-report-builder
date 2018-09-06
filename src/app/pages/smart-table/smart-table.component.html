@@ -1,0 +1,9 @@
+
+<div class="container">
+  <div class="form-group">
+      <input #search class="search" type="text" class="form-control" placeholder="Search..." (keydown.enter)="onSearch(search.value)">
+  </div>
+
+    <ng2-smart-table [settings]="settings" [source]="source"></ng2-smart-table>
+</div>
+

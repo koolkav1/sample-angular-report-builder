@@ -1,0 +1,29 @@
+<div class="flex">
+  <div class="container" dragula="VAMPIRES" [(dragulaModel)]="vamps">
+    <div class="vamp" *ngFor="let vamp of vamps">{{ vamp.name }}</div>
+  </div>
+
+  <div class="container" dragula="VAMPIRES" [(dragulaModel)]="vamps2">
+    <div class="vamp" *ngFor="let vamp of vamps2">{{ vamp.name }}</div>
+  </div>
+</div>
+<div class="container" id="grey-background">
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Vamps Name</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let vampp of vamps2; let i = index">
+            <th scope="row">{{ i + 1}}</th>
+            <td>{{vampp.name}}</td>
+           
+          </tr>
+        
+        </tbody>
+      </table>
+</div>
